@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="volo.tigranhovhannisyan.testapp.mvp.activities.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/person_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_white"
+        android:layout_margin="@dimen/fab_margin"
+        app:rippleColor="@color/dark_pink"
+        app:backgroundTint="@color/pink"/>
+
+</RelativeLayout>

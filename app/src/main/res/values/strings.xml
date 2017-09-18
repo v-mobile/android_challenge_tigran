@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test App</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="add">add</string>
+    <string name="cancel">cancel</string>
+    <string name="required_field">Required Field</string>
+</resources>
