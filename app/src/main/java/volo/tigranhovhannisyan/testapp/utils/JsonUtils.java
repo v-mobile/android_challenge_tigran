@@ -35,21 +35,4 @@ public class JsonUtils {
         }
         return json;
     }
-
-    public static List<Person> getLocalPersonsList(){
-        List<Person> persons = new ArrayList<>();
-        try {
-            JSONArray jsonArray = new JSONArray(loadJSONFromAssets("jsons/persons"));
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject obj = jsonArray.getJSONObject(i);
-
-                String firstName = obj.getString(Person.FIRST_NAME_KEY);
-                String lastName = obj.getString(Person.LAST_NAME_KEY);
-                persons.add(new Person(firstName, lastName));
-            }
-        } catch (JSONException ex){
-            ex.printStackTrace();
-        }
-        return persons;
-    }
 }

@@ -53,7 +53,7 @@ public class MainActivity extends MvpActivity<MainActivityView, MainActivityPres
 
     @Override
     public void onPersonAdded(Person person) {
-        getPresenter().getPersons().add(person);
+        getPresenter().addPerson(person);
         personAdapter.addItem(person);
         personRv.smoothScrollToPosition(personAdapter.getItemCount() - 1);
     }
